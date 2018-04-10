@@ -780,7 +780,8 @@ body {
   font-size: 18px;
   font-weight: 500;
   background: deepskyblue;
-  color: white; }
+  color: white;
+  letter-spacing: 2px; }
 
 .wrapper {
   max-width: 1080px;
@@ -789,7 +790,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 200px; }
 
 .timeZone {
   margin-top: 30px;
