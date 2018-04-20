@@ -27,7 +27,6 @@ class App extends React.Component {
 
   // here is anything we want to happen after the component renders
   componentDidMount() {
-    // const dbref = firebase.database().ref("/eggsLaid");
 
     axios({
       url: "https://proxy.hackeryou.com",
@@ -45,8 +44,7 @@ class App extends React.Component {
           timezone: res.data.timezone,
           temperature: res.data.currently.temperature,
           summary: res.data.currently.summary,
-          icon: res.data.currently.icon
-          // eggInput: ""
+          icon: res.data.currently.icon,
         });
 
         // skycons
@@ -80,9 +78,6 @@ class App extends React.Component {
               <canvas className="flexIcon" id={this.state.icon} width="100" height="100"></canvas>
               <p className="flexTemp">{this.state.temperature}<span className="celcius">℃</span></p>
             </div>
-            {/* <div className="icon">
-              <EggIcon />
-            </div> */}
           </div>
 
       </div>
